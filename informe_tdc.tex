@@ -1,0 +1,420 @@
+\documentclass[12pt,letterpaper]{article}
+
+% APA 7th Edition packages
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{apacite}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+% APA formatting
+\geometry{margin=1in}
+\doublespacing
+\setlength{\parindent}{0.5in}
+
+% Header configuration
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{INFORME TÉCNICO TDC}
+\renewcommand{\headrulewidth}{0pt}
+
+% Title page information
+\title{Análisis Térmico y de Transferencia de Calor:\\ Informe Técnico de Diseño y Cálculo}
+\author{[Nombre del Autor]}
+\date{\today}
+
+\begin{document}
+
+% ======================================
+% PORTADA / TITLE PAGE
+% ======================================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Large \textbf{[NOMBRE DE LA INSTITUCIÓN]} \par}
+    \vspace{1cm}
+    {\large [Facultad/Departamento] \par}
+    \vspace{2cm}
+    
+    {\huge \textbf{Análisis Térmico y de Transferencia de Calor} \par}
+    \vspace{0.5cm}
+    {\Large \textbf{Informe Técnico de Diseño y Cálculo} \par}
+    \vspace{2cm}
+    
+    {\large \textbf{Por:} \par}
+    {\large [Nombre del Autor] \par}
+    \vspace{1cm}
+    
+    {\large \textbf{Curso:} [Nombre del Curso] \par}
+    {\large \textbf{Profesor:} [Nombre del Profesor] \par}
+    \vspace{2cm}
+    
+    {\large \today \par}
+    
+    \vfill
+\end{titlepage}
+
+% ======================================
+% DESCRIPCIÓN DEL PROBLEMA
+% ======================================
+\newpage
+\section{Descripción del Problema}
+
+[Aquí se debe describir detalladamente el problema de transferencia de calor a analizar. Incluir las condiciones iniciales, el sistema a estudiar, y los objetivos del análisis.]
+
+\vspace{1cm}
+% Espacio reservado para diagramas del problema
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{diagrama_problema.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA DIAGRAMA DEL PROBLEMA] \\ \vspace{3cm}}}
+    \caption{Diagrama esquemático del sistema a analizar}
+    \label{fig:diagrama_problema}
+\end{figure}
+
+\subsection{Objetivos}
+\begin{itemize}
+    \item [Objetivo específico 1]
+    \item [Objetivo específico 2]
+    \item [Objetivo específico 3]
+\end{itemize}
+
+% ======================================
+% TABLA DE DATOS
+% ======================================
+\newpage
+\section{Tabla de Datos}
+
+A continuación se presentan los datos necesarios para el análisis térmico:
+
+\begin{table}[H]
+    \centering
+    \caption{Datos de entrada para el análisis térmico}
+    \label{tab:datos_entrada}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Parámetro} & \textbf{Valor} & \textbf{Unidades} \\
+        \midrule
+        [Parámetro 1] & [Valor] & [Unidad] \\
+        [Parámetro 2] & [Valor] & [Unidad] \\
+        [Parámetro 3] & [Valor] & [Unidad] \\
+        [Parámetro 4] & [Valor] & [Unidad] \\
+        [Parámetro 5] & [Valor] & [Unidad] \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\vspace{1cm}
+% Espacio reservado para gráficos de datos
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{grafico_datos.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA GRÁFICOS DE DATOS] \\ \vspace{3cm}}}
+    \caption{Representación gráfica de los datos de entrada}
+    \label{fig:datos_graficos}
+\end{figure}
+
+% ======================================
+% SUPUESTOS
+% ======================================
+\newpage
+\section{Supuestos}
+
+Para el desarrollo del análisis térmico se consideran los siguientes supuestos:
+
+\begin{enumerate}
+    \item [Supuesto 1: Describir el primer supuesto]
+    \item [Supuesto 2: Describir el segundo supuesto]
+    \item [Supuesto 3: Describir el tercer supuesto]
+    \item [Supuesto 4: Describir el cuarto supuesto]
+    \item [Supuesto 5: Describir el quinto supuesto]
+\end{enumerate}
+
+\subsection{Justificación de los Supuestos}
+[Aquí se debe justificar cada uno de los supuestos realizados, explicando por qué son válidos para el problema específico y qué impacto tienen en los resultados.]
+
+% ======================================
+% MODELO Y ECUACIONES
+% ======================================
+\newpage
+\section{Modelo y Ecuaciones}
+
+\subsection{Modelo Físico}
+[Descripción del modelo físico utilizado para representar el problema de transferencia de calor.]
+
+% Espacio reservado para diagrama del modelo
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{modelo_fisico.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA DIAGRAMA DEL MODELO FÍSICO] \\ \vspace{3cm}}}
+    \caption{Modelo físico del sistema}
+    \label{fig:modelo_fisico}
+\end{figure}
+
+\subsection{Ecuaciones Fundamentales}
+
+\subsubsection{Ecuación de Conservación de Energía}
+\begin{equation}
+    \dot{E}_{in} - \dot{E}_{out} + \dot{E}_{gen} = \dot{E}_{st}
+    \label{eq:conservacion_energia}
+\end{equation}
+
+\subsubsection{Ecuación de Conducción de Calor}
+\begin{equation}
+    \dot{q} = -kA\frac{dT}{dx}
+    \label{eq:conduccion}
+\end{equation}
+
+\subsubsection{Ecuación de Convección}
+\begin{equation}
+    \dot{q} = hA(T_s - T_{\infty})
+    \label{eq:conveccion}
+\end{equation}
+
+\subsubsection{Ecuación de Radiación}
+\begin{equation}
+    \dot{q} = \epsilon\sigma A(T_s^4 - T_{sur}^4)
+    \label{eq:radiacion}
+\end{equation}
+
+\subsection{Ecuaciones Específicas del Problema}
+[Aquí se deben desarrollar las ecuaciones específicas derivadas para el problema particular, mostrando el desarrollo matemático paso a paso.]
+
+% Espacio reservado para diagramas de ecuaciones
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{diagrama_ecuaciones.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA DIAGRAMAS DE ECUACIONES] \\ \vspace{3cm}}}
+    \caption{Representación esquemática de las ecuaciones del modelo}
+    \label{fig:esquema_ecuaciones}
+\end{figure}
+
+% ======================================
+% METODOLOGÍA EN EES
+% ======================================
+\newpage
+\section{Metodología en EES (Engineering Equation Solver)}
+
+\subsection{Configuración del Problema en EES}
+[Descripción de cómo se configuró el problema en EES, incluyendo las variables definidas y las ecuaciones implementadas.]
+
+\subsection{Código EES}
+\begin{verbatim}
+// Código EES para el análisis térmico
+// [Aquí se debe incluir el código completo de EES]
+
+// Definición de variables
+T_1 = [valor]    // Temperatura inicial [K]
+T_2 = [valor]    // Temperatura final [K]
+k = [valor]      // Conductividad térmica [W/m·K]
+h = [valor]      // Coeficiente de convección [W/m²·K]
+
+// Ecuaciones del modelo
+// [Incluir las ecuaciones implementadas en EES]
+
+\end{verbatim}
+
+\subsection{Validación del Modelo}
+[Descripción de cómo se validó el modelo en EES, incluyendo verificaciones de balance de energía y comparaciones con soluciones analíticas cuando sea posible.]
+
+% ======================================
+% RESULTADOS BASE
+% ======================================
+\newpage
+\section{Resultados Base}
+
+\subsection{Resultados Principales}
+[Presentación de los resultados principales obtenidos del análisis térmico.]
+
+\begin{table}[H]
+    \centering
+    \caption{Resultados principales del análisis térmico}
+    \label{tab:resultados_principales}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Variable} & \textbf{Valor} & \textbf{Unidades} \\
+        \midrule
+        [Variable 1] & [Valor] & [Unidad] \\
+        [Variable 2] & [Valor] & [Unidad] \\
+        [Variable 3] & [Valor] & [Unidad] \\
+        [Variable 4] & [Valor] & [Unidad] \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Espacio reservado para gráficos de resultados
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{resultados_base.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA GRÁFICOS DE RESULTADOS BASE] \\ \vspace{3cm}}}
+    \caption{Distribución de temperatura en el sistema}
+    \label{fig:resultados_temperatura}
+\end{figure}
+
+\subsection{Análisis de los Resultados}
+[Interpretación y análisis de los resultados obtenidos, explicando su significado físico y relevancia para el problema.]
+
+% ======================================
+% ANÁLISIS PARAMÉTRICO
+% ======================================
+\newpage
+\section{Análisis Paramétrico}
+
+\subsection{Variables de Estudio}
+[Identificación de las variables clave para el análisis paramétrico y justificación de su selección.]
+
+\subsection{Rangos de Variación}
+\begin{table}[H]
+    \centering
+    \caption{Rangos de variación para el análisis paramétrico}
+    \label{tab:rangos_parametrico}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Parámetro} & \textbf{Valor Mínimo} & \textbf{Valor Máximo} & \textbf{Incremento} \\
+        \midrule
+        [Parámetro 1] & [Min] & [Max] & [Inc] \\
+        [Parámetro 2] & [Min] & [Max] & [Inc] \\
+        [Parámetro 3] & [Min] & [Max] & [Inc] \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Espacio reservado para gráficos del análisis paramétrico
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{analisis_parametrico.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [ESPACIO RESERVADO PARA GRÁFICOS DEL ANÁLISIS PARAMÉTRICO] \\ \vspace{3cm}}}
+    \caption{Variación de la temperatura con respecto a los parámetros clave}
+    \label{fig:analisis_parametrico}
+\end{figure}
+
+\subsection{Sensibilidad de Variables}
+[Análisis de la sensibilidad del sistema a las variaciones de los parámetros estudiados.]
+
+% ======================================
+% GRÁFICOS
+% ======================================
+\newpage
+\section{Gráficos}
+
+Esta sección presenta una compilación completa de todos los gráficos generados durante el análisis.
+
+\subsection{Gráficos de Distribución de Temperatura}
+% Espacio reservado para múltiples gráficos
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{grafico_temp_1.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [GRÁFICO 1: DISTRIBUCIÓN DE TEMPERATURA] \\ \vspace{2.5cm}}}
+    \caption{Distribución de temperatura - Caso 1}
+    \label{fig:temp_caso1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{grafico_temp_2.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [GRÁFICO 2: DISTRIBUCIÓN DE TEMPERATURA] \\ \vspace{2.5cm}}}
+    \caption{Distribución de temperatura - Caso 2}
+    \label{fig:temp_caso2}
+\end{figure}
+
+\subsection{Gráficos de Flujo de Calor}
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{grafico_flujo.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [GRÁFICO 3: FLUJO DE CALOR] \\ \vspace{2.5cm}}}
+    \caption{Variación del flujo de calor}
+    \label{fig:flujo_calor}
+\end{figure}
+
+\subsection{Gráficos Comparativos}
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{grafico_comparativo.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [GRÁFICO 4: COMPARACIÓN DE RESULTADOS] \\ \vspace{2.5cm}}}
+    \caption{Comparación entre diferentes configuraciones}
+    \label{fig:comparativo}
+\end{figure}
+
+% ======================================
+% COMPARACIÓN LINEALIZADA
+% ======================================
+\newpage
+\section{Comparación Linealizada}
+
+\subsection{Metodología de Linealización}
+[Descripción del método utilizado para linealizar el problema no lineal y las aproximaciones realizadas.]
+
+\subsection{Comparación de Resultados}
+\begin{table}[H]
+    \centering
+    \caption{Comparación entre resultados no lineales y linealizados}
+    \label{tab:comparacion_lineal}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Variable} & \textbf{Modelo No Lineal} & \textbf{Modelo Linealizado} & \textbf{Error (\%)} \\
+        \midrule
+        [Variable 1] & [Valor 1] & [Valor 2] & [Error] \\
+        [Variable 2] & [Valor 1] & [Valor 2] & [Error] \\
+        [Variable 3] & [Valor 1] & [Valor 2] & [Error] \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Análisis de Validez}
+[Análisis de la validez de la aproximación lineal y determinación de los rangos donde es aplicable.]
+
+% Espacio reservado para gráficos de comparación
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{comparacion_lineal.png}
+    \fbox{\parbox{0.8\textwidth}{\centering [GRÁFICO: COMPARACIÓN LINEAL VS NO LINEAL] \\ \vspace{3cm}}}
+    \caption{Comparación entre modelos lineal y no lineal}
+    \label{fig:comparacion_lineal}
+\end{figure}
+
+% ======================================
+% RECOMENDACIONES DE DISEÑO
+% ======================================
+\newpage
+\section{Recomendaciones de Diseño}
+
+\subsection{Parámetros Óptimos}
+Basándose en los resultados del análisis térmico y paramétrico, se recomiendan los siguientes parámetros de diseño:
+
+\begin{enumerate}
+    \item \textbf{[Parámetro 1]:} [Valor recomendado] - [Justificación]
+    \item \textbf{[Parámetro 2]:} [Valor recomendado] - [Justificación]
+    \item \textbf{[Parámetro 3]:} [Valor recomendado] - [Justificación]
+\end{enumerate}
+
+\subsection{Consideraciones de Seguridad}
+[Factores de seguridad recomendados y consideraciones especiales para la implementación del diseño.]
+
+\subsection{Limitaciones del Análisis}
+[Identificación de las limitaciones del análisis realizado y áreas donde se requiere mayor investigación.]
+
+\subsection{Trabajos Futuros}
+[Sugerencias para estudios adicionales que puedan mejorar el diseño o ampliar el análisis.]
+
+% ======================================
+% REFERENCIAS
+% ======================================
+\newpage
+\bibliographystyle{apacite}
+\bibliography{referencias}
+
+\end{document}
